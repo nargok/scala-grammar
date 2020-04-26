@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5eda688a-7a71-4806-8ff0-f5ecf166fac7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/Graph.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/ShortestPath.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/PaperCup.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/jp/co/dwango/marubatsu/board/Board.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/jp/co/dwango/marubatsu/board/CellState.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/jp/co/dwango/marubatsu/game/Game.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/jp/co/dwango/marubatsu/game/Winner.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/jp/co/dwango/marubatsu/game/package.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Dog$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/Dog$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/ShortestPath$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/ShortestPath$.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +24,13 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Package Object" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,6 +46,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -45,6 +58,12 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="jp.co.dwango.marubatsu.board" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Scala REPL" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
@@ -115,7 +134,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584972700102</updated>
-      <workItem from="1584972704119" duration="12268000" />
+      <workItem from="1584972704119" duration="21097000" />
+      <workItem from="1587880816066" duration="63000" />
+      <workItem from="1587880900931" duration="334000" />
     </task>
     <servers />
   </component>
@@ -123,25 +144,43 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1058" height="251" key="GridCell.Tab.0.bottom" timestamp="1585401057066">
+    <state x="1133" y="397" width="373" height="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1585491740830">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1058" height="251" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1585401057066" />
-    <state width="1058" height="251" key="GridCell.Tab.0.center" timestamp="1585401057066">
-      <screen x="0" y="23" width="1920" height="1057" />
+    <state x="1133" y="397" width="373" height="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.23.1920.1057@0.23.1920.1057" timestamp="1585491740830" />
+    <state width="1878" height="319" key="GridCell.Tab.0.bottom" timestamp="1587881225936">
+      <screen x="-1920" y="-48" width="1920" height="1057" />
     </state>
-    <state width="1058" height="251" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1585401057066" />
-    <state width="1058" height="251" key="GridCell.Tab.0.left" timestamp="1585401057065">
-      <screen x="0" y="23" width="1920" height="1057" />
+    <state width="1358" height="251" key="GridCell.Tab.0.bottom/0.23.1440.877/-1920.-157.1920.1057@0.23.1440.877" timestamp="1586021327196" />
+    <state width="1878" height="319" key="GridCell.Tab.0.bottom/0.23.1440.877/-1920.-48.1920.1057/-3000.-643.1080.1897@-1920.-48.1920.1057" timestamp="1587881225936" />
+    <state width="1058" height="251" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1585402049296" />
+    <state width="1878" height="319" key="GridCell.Tab.0.center" timestamp="1587881225935">
+      <screen x="-1920" y="-48" width="1920" height="1057" />
     </state>
-    <state width="1058" height="251" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1585401057065" />
-    <state width="1058" height="251" key="GridCell.Tab.0.right" timestamp="1585401057066">
-      <screen x="0" y="23" width="1920" height="1057" />
+    <state width="1358" height="251" key="GridCell.Tab.0.center/0.23.1440.877/-1920.-157.1920.1057@0.23.1440.877" timestamp="1586021327175" />
+    <state width="1878" height="319" key="GridCell.Tab.0.center/0.23.1440.877/-1920.-48.1920.1057/-3000.-643.1080.1897@-1920.-48.1920.1057" timestamp="1587881225935" />
+    <state width="1058" height="251" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1585402049295" />
+    <state width="1878" height="319" key="GridCell.Tab.0.left" timestamp="1587881225934">
+      <screen x="-1920" y="-48" width="1920" height="1057" />
     </state>
-    <state width="1058" height="251" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1585401057066" />
-    <state x="666" y="409" key="com.intellij.ide.util.TipDialog" timestamp="1584972705400">
-      <screen x="0" y="23" width="1920" height="1057" />
+    <state width="1358" height="251" key="GridCell.Tab.0.left/0.23.1440.877/-1920.-157.1920.1057@0.23.1440.877" timestamp="1586021327175" />
+    <state width="1878" height="319" key="GridCell.Tab.0.left/0.23.1440.877/-1920.-48.1920.1057/-3000.-643.1080.1897@-1920.-48.1920.1057" timestamp="1587881225934" />
+    <state width="1058" height="251" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1585402049294" />
+    <state width="1878" height="319" key="GridCell.Tab.0.right" timestamp="1587881225936">
+      <screen x="-1920" y="-48" width="1920" height="1057" />
     </state>
+    <state width="1358" height="251" key="GridCell.Tab.0.right/0.23.1440.877/-1920.-157.1920.1057@0.23.1440.877" timestamp="1586021327175" />
+    <state width="1878" height="319" key="GridCell.Tab.0.right/0.23.1440.877/-1920.-48.1920.1057/-3000.-643.1080.1897@-1920.-48.1920.1057" timestamp="1587881225936" />
+    <state width="1058" height="251" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1585402049295" />
+    <state x="-1451" y="119" key="SettingsEditor" timestamp="1587880975221">
+      <screen x="-1920" y="-48" width="1920" height="1057" />
+    </state>
+    <state x="-1451" y="119" key="SettingsEditor/0.23.1440.877/-1920.-48.1920.1057/-3000.-643.1080.1897@-1920.-48.1920.1057" timestamp="1587880975221" />
+    <state x="-1253" y="338" key="com.intellij.ide.util.TipDialog" timestamp="1587880904950">
+      <screen x="-1920" y="-48" width="1920" height="1057" />
+    </state>
+    <state x="-1253" y="338" key="com.intellij.ide.util.TipDialog/0.23.1440.877/-1920.-48.1920.1057/-3000.-643.1080.1897@-1920.-48.1920.1057" timestamp="1587880904950" />
+    <state x="500" y="343" key="com.intellij.ide.util.TipDialog/0.23.1440.877/-1920.-48.1920.1057/-3000.-643.1080.1897@0.23.1440.877" timestamp="1587880836085" />
     <state x="666" y="409" key="com.intellij.ide.util.TipDialog/0.23.1920.1057@0.23.1920.1057" timestamp="1584972705400" />
     <state x="1075" y="282" width="670" height="676" key="search.everywhere.popup" timestamp="1584973521191">
       <screen x="0" y="23" width="1920" height="1057" />
